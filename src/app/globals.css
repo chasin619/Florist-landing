@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Outfit:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #6129cb;
+  --secondary: #5c2ac8e5;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(black);
+  background: var(white);
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.hero-bg {
+  background: linear-gradient(
+    225.17deg,
+    #7b11f9 0.3%,
+    #7922d8 39.59%,
+    #3636b2 100%
+  );
+}
+
+.hero-gradient {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.05;
+
+  @apply top-[-677px] left-[-990px] rounded-full w-[1264px] h-[1237px] absolute z-[1];
+}
+
+.hero-gradient-secondary {
+  background: #ffffff;
+  mix-blend-mode: normal;
+  opacity: 0.05;
+
+  @apply rounded-full w-[1264px] h-[1237px] absolute z-[1];
+}
+
+.rolling-text-container {
+  position: relative;
+  height: 33px;
+  bottom: 8px;
+  overflow: hidden;
+}
+
+.rolling-text {
+  position: absolute;
+  top: 50px;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: all 1s ease-in-out;
+}
+
+.rolling-text.active {
+  top: 0;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.rolling-text:not(.active) {
+  top: -50px;
+  opacity: 0;
+  transform: translateY(-100%);
+}
+
+.animated-div {
+  @apply shadow-[0px_3px_32px_6px_#0000001A] md:h-[150px] h-full rounded-[20px] md:w-[546px] w-full absolute top-[382px];
+}
+
+@media (min-width: 768px) {
+  .contact-us {
+    height: calc(100vh - 223px);
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    height: calc(100vh - 207px);
+  }
+}
