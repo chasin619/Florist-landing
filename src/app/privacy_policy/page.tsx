@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Privacy from "@/components/privacy";
 import { Metadata } from "next";
+import NavbarSecondary from "@/components/navbarSecondary";
 
 export const metadata: Metadata = {
   title: "WPro.AI – Privacy Policy",
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarSecondary />
       <Privacy />
       <Footer />
     </div>

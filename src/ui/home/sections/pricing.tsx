@@ -1,7 +1,7 @@
 import React from "react";
 import { Flex, Grid, Text } from "@radix-ui/themes";
 
-import { PricingCard } from "@/components/pricingCard";
+// import { PricingCard } from "@/components/pricingCard";
 import { pricingPlans } from "@/utils/constants";
 import { useRouter } from "next/navigation";
 
@@ -39,9 +39,9 @@ const Pricing = () => {
           maxWidth="1400px"
           mt="5"
         >
-          {pricingPlans.map((plan, index) => (
+          {/* {pricingPlans.map((plan, index) => (
             <PricingCard plan={plan} key={index} handlePlanSelect={() => push(`/register?planName=${plan.name}`)} />
-          ))}
+          ))} */}
         </Grid>
       </Flex>
     </section>

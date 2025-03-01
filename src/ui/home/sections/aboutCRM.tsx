@@ -49,9 +49,8 @@ const AboutCRM = () => {
               key={index}
               color="gray"
               my="5"
-              className={`border-l-[3px] text-base border-l-orange pl-6 ${
-                activeIndex === index ? "opacity-100" : "opacity-45"
-              }`}
+              className={`border-l-[3px] text-base border-l-orange pl-6 ${activeIndex === index ? "opacity-100" : "opacity-45"
+                }`}
               onMouseEnter={() => setActiveIndex(index)}
             >
               {feature.name}

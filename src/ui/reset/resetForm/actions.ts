@@ -2,13 +2,14 @@ import { useState } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { useForm } from "react-hook-form";
 
-import { yupResolver } from "@hookform/resolvers/yup";
-import useAuthAStore from "@/store/auth";
+// import { yupResolver } from "@hookform/resolvers/yup";
+// import useAuthAStore from "@/store/auth";
 import { resetSchema } from "./schema";
 
 const useResetForm = () => {
-  const { loading, resetPassword } = useAuthAStore();
+  // const { loading, resetPassword } = useAuthAStore();
   const { push } = useRouter();
+  const loading = false; // termporary
   const token = useSearchParams()?.get("token");
   const [showPassword, setShowPassword] = useState<any>({
     password: false,
@@ -16,7 +17,7 @@ const useResetForm = () => {
   });
 
   const form = useForm({
-    resolver: yupResolver(resetSchema),
+    // resolver: yupResolver(resetSchema),
     defaultValues: {
       password: "",
       confirm_password: "",
@@ -24,7 +25,7 @@ const useResetForm = () => {
   });
 
   const onSubmit = async (payload: any) => {
-    await resetPassword({ ...payload, token });
+    // await resetPassword({ ...payload, token });
     form.reset();
     push("/?login=true");
   };

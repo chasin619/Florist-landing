@@ -20,7 +20,6 @@ export default function App() {
       <PreFooter />
       <Footer />
 
-      {/* Move modals to a separate client-side component */}
       <ModalProvider />
     </div>
   );

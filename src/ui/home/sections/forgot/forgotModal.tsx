@@ -13,7 +13,7 @@ interface ForgotModalProps {
 }
 
 const ForgotModal: React.FC<ForgotModalProps> = ({ isOpen, onOpenChange }) => {
-  const { onSubmit, form, loading } = useForgot();
+  const { onSubmit, form } = useForgot();
   const {
     handleSubmit,
     register,
@@ -35,7 +35,7 @@ const ForgotModal: React.FC<ForgotModalProps> = ({ isOpen, onOpenChange }) => {
           title="Send Email"
           customStyles="w-full py-[8px] !mt-4"
           type="submit"
-          disabled={loading}
+        // disabled={loading}
         />
       </form>
     </CustomDialog>

@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Contact from "@/components/contact";
 import { Metadata } from "next";
+import NavbarSecondary from "@/components/navbarSecondary";
 
 export const metadata: Metadata = {
   title: "WPro.AI – Contact us",
@@ -13,7 +14,8 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <Navbar />
+      {/* <Navbar /> */}
+      <NavbarSecondary />
       <Contact />
       <Footer />
     </div>

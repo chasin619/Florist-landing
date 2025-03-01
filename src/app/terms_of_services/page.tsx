@@ -3,6 +3,7 @@ import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 import Terms from "@/components/terms";
 import { Metadata } from "next";
+import NavbarSecondary from "@/components/navbarSecondary";
 
 
 export const metadata: Metadata = {
@@ -14,7 +15,7 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <Navbar />
+      <NavbarSecondary />
       <Terms />
       <Footer />
     </div>
