@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import Privacy from "@/components/privacy";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import Privacy from "../../components/privacy";
 import { Metadata } from "next";
-import NavbarSecondary from "@/components/navbarSecondary";
+import NavbarSecondary from "../../components/navbarSecondary";
 
 export const metadata: Metadata = {
   title: "WPro.AI – Privacy Policy",

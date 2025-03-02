@@ -1,9 +1,9 @@
 import React from "react";
-import Navbar from "@/components/navbar";
-import Footer from "@/components/footer";
-import Terms from "@/components/terms";
+import Navbar from "../../components/navbar";
+import Footer from "../../components/footer";
+import Terms from "../../components/terms";
 import { Metadata } from "next";
-import NavbarSecondary from "@/components/navbarSecondary";
+import NavbarSecondary from "../../components/navbarSecondary";
 
 
 export const metadata: Metadata = {

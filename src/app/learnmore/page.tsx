@@ -1,9 +1,9 @@
-import Hero from "@/components/heroSecondary";
-import Florists from "@/components/florists";
-import PreFooter from "@/components/preFooterSecondary";
-import Footer from "@/components/footer";
+import Hero from '../../components/heroSecondary';
+import Florists from "../../components/florists";
+import PreFooter from "../../components/preFooterSecondary";
+import Footer from "../../components/footer";
 import React from "react";
-import NavbarSecondary from "@/components/navbarSecondary";
+import NavbarSecondary from "../../components/navbarSecondary";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
