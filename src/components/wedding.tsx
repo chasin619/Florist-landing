@@ -1,17 +1,15 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import Image from "next/image";
-import MacImage from "@/../public/images/mac.webp";
-import RecipeBuilder from "@/../public/icons/recipe-builder.png";
-import ProposalBuilder from "@/../public/icons/proposal-builder.png";
-import ContractSigning from "@/../public/icons/contract-signing.png";
-import AiEmailAssistance from "@/../public/icons/ai-email-assistance.png";
-import WeddingImage from "@/../public/images/wedding-image.webp";
-import RecipeBuilderImage from "@/../public/images/recipe-builder.webp";
-import ProposalBuilderImage from "@/../public/images/proposal-builder.webp";
-import ContractSigningImage from "@/../public/images/contract-signing.webp";
-import AiEmailAssistantImage from "@/../public/images/ai-email-assistant.webp";
-import ChevronDownIcon from "@/../public/icons/chevron-down.svg";
+import MacImage from "../../public/images/mac.webp";
+import RecipeBuilder from "../../public/icons/recipe-builder.png";
+import ProposalBuilder from "../../public/icons/proposal-builder.png";
+import ContractSigning from "../../public/icons/contract-signing.png";
+import AiEmailAssistance from "../../public/icons/ai-email-assistance.png";
+import RecipeBuilderImage from "../../public/images/recipe-builder.webp";
+import ProposalBuilderImage from "../../public/images/proposal-builder.webp";
+import ContractSigningImage from "../../public/images/contract-signing.webp";
+import AiEmailAssistantImage from "../../public/images/ai-email-assistant.webp";
 import Link from "next/link";
 
 const Services = [

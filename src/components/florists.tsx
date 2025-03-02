@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import WeddingImage from "@/../public/images/full-wedding-image.webp";
-import WeddingPlanning from "@/../public/images/wedding-planning.webp";
-import WeddingVenues from "@/../public/images/wedding-venues.webp";
+import WeddingImage from "../../public/images/full-wedding-image.webp";
+import WeddingPlanning from "../../public/images/wedding-planning.webp";
+import WeddingVenues from "../../public/images/wedding-venues.webp";
 import Link from "next/link";
 
 const Services = [

@@ -1,6 +1,5 @@
 "use client"
 import Image from "next/image";
-import CoinImage from "@/../public/images/coin.webp";
 import React from "react";
 import { useRouter } from "next/navigation";
 

@@ -2,8 +2,8 @@
 import Link from "next/link";
 import React, { useState, useRef, useEffect } from "react";
 import Image from "next/image";
-import BarsIcon from "@/../public/icons/bars.svg";
-import XIcon from "@/../public/icons/x.svg";
+import BarsIcon from "../../public/icons/bars.svg";
+import XIcon from "../../public/icons/x.svg";
 
 function NavbarSecondary() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

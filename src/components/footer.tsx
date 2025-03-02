@@ -1,10 +1,10 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import FacebookIcon from "@/../public/icons/facebook.png";
-import TwitterIcon from "@/../public/icons/twitter.png";
-import LinkedinIcon from "@/../public/icons/linkedin.png";
-import InstagramIcon from "@/../public/icons/instagram.png";
+import FacebookIcon from "../../public/icons/facebook.png";
+import TwitterIcon from "../../public/icons/twitter.png";
+import LinkedinIcon from "../../public/icons/linkedin.png";
+import InstagramIcon from "../../public/icons/instagram.png";
 
 export default function footer() {
   return (

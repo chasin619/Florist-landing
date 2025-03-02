@@ -1,5 +1,5 @@
 import React from "react";
-import LearnmoreBg from "@/../public/images/learnmore-bg.png";
+import LearnmoreBg from "../../public/images/learnmore-bg.png";
 import Image from "next/image";
 import Link from "next/link";
 
