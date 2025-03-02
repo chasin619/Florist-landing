@@ -2,11 +2,11 @@
 
 import React from "react";
 import Image from "next/image";
-import Herobg from "@/../public/images/hero-bg.webp";
-import Capterra from "@/../public/images/capterra.png";
-import SoftwareAdvice from "@/../public/images/software-advice.png";
-import GetApp from "@/../public/images/get-app.png";
-import Star from "@/../public/images/star.png";
+import Herobg from "../../public/images/hero-bg.webp";
+import Capterra from "../../public/images/capterra.png";
+import SoftwareAdvice from "../../public/images/software-advice.png";
+import GetApp from "../../public/images/get-app.png";
+import Star from "../../public/images/star.png";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 
