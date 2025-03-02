@@ -1,9 +1,9 @@
-import Hero from "@/components/hero";
-import Pricing from "@/components/pricing";
-import Footer from "@/components/footer";
-import PreFooter from "@/components/prefooter";
-import BuildPipeline from "@/components/pipeline";
-import ModalProvider from "@/components/common/modalProvider";
+import Hero from "../components/hero";
+import Pricing from "../components/pricing";
+import Footer from "../components/footer";
+import PreFooter from "../components/prefooter";
+import BuildPipeline from "../components/pipeline";
+import ModalProvider from "../components/common/modalProvider";
 
 export const metadata = {
   title: "Wedding Florist Software",

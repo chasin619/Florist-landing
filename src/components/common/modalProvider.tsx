@@ -1,10 +1,10 @@
 "use client";
 
 import { useState } from "react";
-import Navbar from "@/components/navbar";
-import { LoginModal } from "@/ui/home/sections/login";
-import { ForgotModal } from "@/ui/home/sections/forgot";
-import { CustomAlertDialog } from "@/components/common/alertDialog";
+import Navbar from "../../components/navbar";
+import { LoginModal } from "../../ui/home/sections/login";
+import { ForgotModal } from "../../ui/home/sections/forgot";
+import { CustomAlertDialog } from "../../components/common/alertDialog";
 
 export default function ModalProvider() {
     const [isLoginModalOpen, setLoginModalOpen] = useState(false);
