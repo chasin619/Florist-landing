@@ -2,7 +2,7 @@
 
 import React from "react";
 
-import { CustomDialog } from "@/components/common/dialog";
+import { CustomDialog } from "../../../../components/common/dialog";
 import { Button } from "../../../../components/common/button";
 import { Input } from "../../../../components/common/input";
 import useForgot from "./actions";
