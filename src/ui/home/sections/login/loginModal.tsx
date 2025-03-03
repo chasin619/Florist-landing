@@ -16,7 +16,7 @@ interface LoginModalProps {
 }
 
 const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onOpenChange, onForgotClick }) => {
-  const { form, showPassword, setShowPassword } = useLogin();
+  const { onSubmit, form, showPassword, setShowPassword, loading } = useLogin();
   const {
     handleSubmit,
     register,
@@ -25,7 +25,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onOpenChange, onForgotC
 
   return (
     <CustomDialog title="Login" isOpen={isOpen} onOpenChange={onOpenChange}>
-      <form className="space-y-4" >
+      <form className="space-y-4" onSubmit={handleSubmit(onSubmit)}>
         <Input
           {...register("business_email")}
           placeholder="Email"
@@ -68,7 +68,7 @@ const LoginModal: React.FC<LoginModalProps> = ({ isOpen, onOpenChange, onForgotC
           title="Login"
           customStyles="w-full  py-[8px] !mt-4"
           type="submit"
-        // disabled={loading}
+          disabled={loading}
         />
       </form>
     </CustomDialog>
