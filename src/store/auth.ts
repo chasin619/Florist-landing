@@ -27,7 +27,8 @@ const useAuthAStore = create<AuthStoreState>()(
           Cookies.set("authToken", token, {
             expires: 7,
             secure: true,
-            sameSite: "strict",
+            sameSite: "None",
+            domain: ".wpro.ai",
           });
 
           toast.success("Login successful!");
