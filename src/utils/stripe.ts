@@ -3,9 +3,7 @@ import apiInstance from "./api";
 import { toast } from "react-toastify";
 import Cookies from "js-cookie";
 
-const STRIPE_SECRET_KEY =
-  "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";
-
+const STRIPE_SECRET_KEY = process.env.STRIPE_API_KEY;
 export const stripe = new Stripe(STRIPE_SECRET_KEY as string);
 
 export const redirectToCheckout = async (userData: any) => {
