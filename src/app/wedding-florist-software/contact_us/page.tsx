@@ -1,8 +1,8 @@
 import React from "react";
-import Footer from "../../components/footer";
-import Contact from "../../components/contact";
+import Footer from "../../../components/footer";
+import Contact from "../../../components/contact";
 import { Metadata } from "next";
-import NavbarSecondary from "../../components/navbarSecondary";
+import NavbarSecondary from "../../../components/navbarSecondary";
 //  created a branch
 export const metadata: Metadata = {
   title: "WPro.AI – Contact us",
