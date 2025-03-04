@@ -29,7 +29,7 @@ const useLogin = () => {
       if (status === "pending" || status === "onHold") {
         push(`/?status=${status}&login=false`);
       } else if (status === "active") {
-        push("/dashboard/events");
+        push("https://florist.wpro.ai/dashboard/events");
       } else {
         push("/");
       }
